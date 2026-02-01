@@ -97,7 +97,7 @@ class Calculadora {
     double sumar(double a, double b) { return a + b; }
     int sumar(int a, int b, int c) { return a + b + c; }
 }
-
+```
 
 ## 8. Ejemplo mínimo de clase en Java, que se llame Punto, con dos atributos, x e y, con un método que se llame `calculaDistanciaAOrigen`, que calcule la distancia a la posición 0,0. Por sencillez, los atributos deben tener visibilidad por defecto. Crea además un ejemplo de uso con una instancia y uso del método
 
@@ -108,7 +108,6 @@ Un exemplo mínimo en Java pode definirse cunha clase Punto que teña dous atrib
 No uso, créase unha instancia con new Punto(), asígnanse valores a x e y, e chámase ao método para obter a distancia. Ao ter visibilidade por defecto, os atributos son accesibles desde outras clases no mesmo paquete; por iso, nun exemplo mínimo adoita colocarse todo no mesmo ficheiro e sen declarar paquete.
 
 
-```markdown
 ```java
 class Punto {
     double x;  // visibilidade por defecto (package-private)
@@ -129,6 +128,7 @@ public class Main {
         System.out.println("Distancia ao orixe: " + d); // debería imprimir 5.0
     }
 }
+```
 
 ## 9. ¿Cuál es el punto de entrada en un programa en Java? ¿Qué es `static` y para qué vale? ¿Sólo se emplea para ese método `main`? ¿Para qué se combina con `final`?
 
@@ -154,13 +154,13 @@ A máquina virtual (JVM) é o programa que executa ese formato intermedio e forn
 O byte-code é ese conxunto de instrucións intermedias para a JVM, e os ficheiros .class son o resultado de compilar cada clase Java: conteñen bytecode e metadatos necesarios para a execución. Por iso, cando se executa java Main, a JVM busca Main.class no classpath, cárgao, e chama ao seu main. Un exemplo mínimo de sesión en terminal sería:
 
 
-```markdown
 ```bash
 # compilar
 javac Main.java
 
 # executar (sen .class)
 java Main
+```
 
 ## 11. En el código anterior de la clase `Punto` ¿Qué es `new`? ¿Qué es un **constructor**? Pon un ejemplo de constructor en una clase `Empleado` que tenga DNI, nombre y apellidos
 
@@ -324,7 +324,6 @@ O máis habitual é pasar o struct por enderezo (punteiro) cando se quere evitar
 O que pasa con this é que deixa de existir como “referencia implícita”: en C hai que pasalo explicitamente. Ese punteiro (normalmente o primeiro parámetro) fai o papel do obxecto receptor, do mesmo xeito que en Java un método de instancia ten acceso a this sen que apareza na lista de parámetros.
 
 
-```markdown
 ```c
 #include <math.h>
 #include <stdio.h>
@@ -345,3 +344,4 @@ int main(void) {
     printf("Distancia ao orixe: %f\n", punto_distancia_origen(&p));
     return 0;
 }
+```
