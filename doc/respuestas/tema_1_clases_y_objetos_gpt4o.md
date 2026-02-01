@@ -172,6 +172,7 @@ Un constructor é un membro especial que ten o mesmo nome ca clase e non ten tip
 
 A continuación móstrase un exemplo cunha clase Empleado que ten dni, nombre e apellidos e un constructor que recibe eses tres datos e os garda nos atributos. Por sinxeleza, os campos quedan con visibilidade por defecto (igual que se pedira antes), e inclúese tamén un exemplo mínimo de uso.
 
+```java
 class Empleado {
     String dni;
     String nombre;
@@ -190,7 +191,7 @@ public class Main {
         System.out.println(e.nombre + " " + e.apellidos + " (" + e.dni + ")");
     }
 }
-
+```
 
 ## 12. ¿Qué es la referencia `this`? ¿Se llama igual en todos los lenguajes? Pon un ejemplo del uso de `this` en la clase `Punto`
 
@@ -202,6 +203,7 @@ Non se chama igual en todos os linguaxes: en C++ úsase tamén this, en Python �
 
 Un exemplo típico en Punto é empregar this no constructor para diferenciar parámetros x e y dos atributos x e y da instancia. Tamén pode empregarse nun método para deixar claro que se está a usar o estado do propio obxecto:
 
+```java
 class Punto {
     double x;
     double y;
@@ -215,6 +217,7 @@ class Punto {
         return Math.sqrt(this.x * this.x + this.y * this.y);
     }
 }
+```
 
 ## 13. Añade ahora otro nuevo método que se llame `distanciaA`, que reciba un `Punto` como parámetro y calcule la distancia entre `this` y el punto proporcionado
 
@@ -226,6 +229,7 @@ Este método encaixa ben coa POO porque a operación “distancia desde este pun
 
 Un exemplo mínimo quedaría así:
 
+```java
 class Punto {
     double x;
     double y;
@@ -254,7 +258,7 @@ public class Main {
         System.out.println("Distancia p1->p2: " + p1.distanciaA(p2)); // 5.0
     }
 }
-
+```
 
 ## 14. El paso del `Punto` como parámetro a un método, es **por copia** o **por referencia**, es decir, si se cambia el valor de algún atributo del punto pasado como parámetro, dichos cambios afectan al objeto fuera del método? ¿Qué ocurre si en vez de un `Punto`, se recibiese un entero (`int`) y dicho entero se modificase dentro de la función? 
 
@@ -277,6 +281,7 @@ Conceptos equivalentes existen noutros linguaxes: en C++ está operator<< para s
 
 Un exemplo en Punto pode devolver algo como Punto(x=..., y=...). Para indicarlle ao compilador que se está redefinindo un método herdado, convén usar @Override:
 
+```java
 class Punto {
     double x;
     double y;
@@ -299,7 +304,7 @@ public class Main {
         System.out.println(p.toString());   // equivalente
     }
 }
-
+```
 
 ## 16. Reflexiona: ¿una clase es como un `struct` en C? ¿Qué le falta al `struct` para ser como una clase y las variables de ese tipo ser instancias?
 
