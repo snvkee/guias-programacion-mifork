@@ -91,12 +91,12 @@ A sobrecarga de métodos (method overloading) consiste en definir varios método
 
 En Java, a sobrecarga non se decide polo tipo devolto, senón polos parámetros. Por exemplo, sumar(int a, int b) e sumar(double a, double b) poden coexistir; en cambio, non se poden ter dous métodos iguais en parámetros e que só cambie o retorno. A idea pode lembrarse como ter varias funcións en C co mesmo “propósito”, pero en C sería necesario darlles nomes diferentes (por exemplo sumar_int e sumar_double), mentres que en Java se pode manter o mesmo nome e deixar que a sinatura (parámetros) distinga.
 
+```java
 class Calculadora {
     int sumar(int a, int b) { return a + b; }
     double sumar(double a, double b) { return a + b; }
     int sumar(int a, int b, int c) { return a + b + c; }
 }
-
 
 
 ## 8. Ejemplo mínimo de clase en Java, que se llame Punto, con dos atributos, x e y, con un método que se llame `calculaDistanciaAOrigen`, que calcule la distancia a la posición 0,0. Por sencillez, los atributos deben tener visibilidad por defecto. Crea además un ejemplo de uso con una instancia y uso del método
@@ -107,6 +107,9 @@ Un exemplo mínimo en Java pode definirse cunha clase Punto que teña dous atrib
 
 No uso, créase unha instancia con new Punto(), asígnanse valores a x e y, e chámase ao método para obter a distancia. Ao ter visibilidade por defecto, os atributos son accesibles desde outras clases no mesmo paquete; por iso, nun exemplo mínimo adoita colocarse todo no mesmo ficheiro e sen declarar paquete.
 
+
+```markdown
+```java
 class Punto {
     double x;  // visibilidade por defecto (package-private)
     double y;  // visibilidade por defecto (package-private)
@@ -150,6 +153,9 @@ A máquina virtual (JVM) é o programa que executa ese formato intermedio e forn
 
 O byte-code é ese conxunto de instrucións intermedias para a JVM, e os ficheiros .class son o resultado de compilar cada clase Java: conteñen bytecode e metadatos necesarios para a execución. Por iso, cando se executa java Main, a JVM busca Main.class no classpath, cárgao, e chama ao seu main. Un exemplo mínimo de sesión en terminal sería:
 
+
+```markdown
+```bash
 # compilar
 javac Main.java
 
@@ -317,7 +323,11 @@ O máis habitual é pasar o struct por enderezo (punteiro) cando se quere evitar
 
 O que pasa con this é que deixa de existir como “referencia implícita”: en C hai que pasalo explicitamente. Ese punteiro (normalmente o primeiro parámetro) fai o papel do obxecto receptor, do mesmo xeito que en Java un método de instancia ten acceso a this sen que apareza na lista de parámetros.
 
+
+```markdown
+```c
 #include <math.h>
+#include <stdio.h>
 
 typedef struct {
     double x;
@@ -330,10 +340,8 @@ double punto_distancia_origen(const Punto *this) {
 }
 
 /* Exemplo de uso */
-#include <stdio.h>
 int main(void) {
     Punto p = {3, 4};
     printf("Distancia ao orixe: %f\n", punto_distancia_origen(&p));
     return 0;
 }
-
