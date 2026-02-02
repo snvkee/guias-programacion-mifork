@@ -1,0 +1,114 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2867
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red255\green255\blue255;\red0\green0\blue0;\red243\green251\blue249;
+\red255\green255\blue255;\red244\green251\blue249;\red243\green251\blue251;\red244\green251\blue251;\red242\green250\blue251;
+\red239\green247\blue251;\red239\green246\blue251;\red238\green245\blue251;\red238\green245\blue251;\red56\green126\blue248;
+\red237\green244\blue251;\red236\green244\blue251;\red12\green14\blue18;\red55\green125\blue247;\red12\green14\blue18;
+\red237\green244\blue251;\red238\green246\blue251;\red239\green246\blue251;\red242\green249\blue251;\red241\green249\blue251;
+}
+{\*\expandedcolortbl;;\cssrgb\c100000\c100000\c99985;\cssrgb\c0\c0\c0;\cssrgb\c96339\c98757\c98003;
+\cssrgb\c100000\c100000\c100000;\cssrgb\c96365\c98780\c98269;\cssrgb\c96327\c98734\c98826;\cssrgb\c96400\c98810\c98662;\cssrgb\c95878\c98276\c98849;
+\cssrgb\c95071\c97451\c98858;\cssrgb\c94836\c97209\c98854;\cssrgb\c94598\c96965\c98847;\cssrgb\c94479\c96843\c98842;\cssrgb\c27271\c58364\c97905;
+\cssrgb\c94359\c96719\c98837;\cssrgb\c94118\c96471\c98824;\cssrgb\c5098\c6667\c9020;\cssrgb\c26969\c58005\c97580;\cssrgb\c5119\c6691\c9038;
+\cssrgb\c94239\c96595\c98831;\cssrgb\c94717\c97088\c98851;\cssrgb\c94954\c97330\c98857;\cssrgb\c95764\c98160\c98852;\cssrgb\c95650\c98043\c98855;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww29200\viewh15320\viewkind0
+\deftab720
+\pard\tx9828\pardeftab720\sa320\partightenfactor0
+
+\f0\fs48 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 TEMA 1\
+
+\fs36 \cf5 \strokec6 Caracter\'edsticas b\'e1sicas da programaci\'f3n orientada a obxetos\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs32 \cf3 \cb1 \strokec7 Estas caracter\'edsticas  en conxunto, permiten organizar o programa arredor de \'93entidades\'94 (obxectos) que combinan datos e comportamento.\
+* A abstracci\'f3n consiste en representar s\'f3 o esencial dun concepto e ocultar o         irrelevante para o uso. \'c9 dicir, def\'ednese que pode facer un obxecto (operaci\'f3ns  dispo\'f1ibles) sen obrigar a co\'f1ecer como o fai internamente. Esta se emplea para :\
+       - Tratar con temas complejos.\
+       - Para facilitar  el cambio .\
+* O encapsulamento \'e9 a idea de manter xuntos os datos e as funci\'f3ns que os manipulan, e controlar o acceso a eses datos.  (Unir estado y comportamiento y ocultar partes )\
+* A herdanza permite crear unha clase nova reutilizando e especializando outra: a subclase herda propiedades e m\'e9todos da superclase e pode engadir ou modificar comportamento. \
+* O polimorfismo permite tratar obxectos de clases distintas de maneira uniforme a trav\'e9s dun tipo com\'fan (por exemplo, unha superclase), chamando ao mesmo m\'e9todo e facendo que cada obxecto responda coa s\'faa versi\'f3n.\
+\strokec8 \
+Existen diferentes lenguajes que se emplean en la programaci\'f3n  orientada a objectos como\strokec9  por exemplo, Java, C++, Python e C# . \
+\pard\pardeftab720\sa320\partightenfactor0
+\cf3 \strokec9 En C++ a orientaci\'f3n a obxectos convive facilmente co estilo procedemental, algo familiar para quen v\'e9n de C: p\'f3dese programar con struct/funci\'f3ns e ir incorporando clases, construtores, herdanza, etc. Java e C# est\'e1n m\'e1is centradas no modelo de clases desde o inicio e tenden a fomentar unha estrutura m\'e1is \'93todo dentro de clases\'94, con xesti\'f3n autom\'e1tica de memoria e bibliotecas est\'e1ndar amplas.\
+Python tam\'e9n \'e9 orientado a obxectos , pero permite un estilo moi flexible e menos \'93cerimonioso\'94 ca Java ou C#. Isto fai que se poidan usar clases cando aportan orde e reutilizaci\'f3n, sen necesidade de converter todo en clases desde o primeiro momento.\
+\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs36 \cf2 \cb3 \strokec10 Que es la\'a0programaci\'f3n modular?\
+
+\fs32 \cf3 \cb1 \strokec11 Antes da programaci\'f3n estructurada empregabase a programaci\'f3n en ensamblador .
+\fs36 \strokec11 \
+
+\fs32 \strokec12 A programaci\'f3n estruturada \'e9 un estilo no que o control do programa se organiza con estruturas claras de fluxo ,evitando saltos arbitrarios tipo goto. \
+O obxectivo \'e9 facer o c\'f3digo m\'e1is lexible, m\'e1is doado de probar e de manter, reducindo \'93enredos\'94 no fluxo de execuci\'f3n.\
+\pard\pardeftab720\sa320\partightenfactor0
+\cf3 \strokec12 A programaci\'f3n modular vai un paso m\'e1is al\'e1 na organizaci\'f3n: consiste en dividir o programa en m\'f3dulos con responsabilidades ben definidas e interfaces claras. \
+Un m\'f3dulo adoita agrupar datos e operaci\'f3ns relacionadas e exp\'f3n s\'f3 o necesario cara f\'f3ra, ocultando detalles internos. En C isto encaixa ben co patr\'f3n de .h (declaraci\'f3ns) e .c (implementaci\'f3n), onde o encabezado act\'faa como contrato do m\'f3dulo.\
+A diferenza pr\'e1ctica \'e9 que a estruturada c\'e9ntrase sobre todo en como escribir o fluxo dentro de cada parte, mentres que a modular c\'e9ntrase en como separar o programa en partes para xestionar a complexidade. \
+A POO retoma isto, pero agrupando m\'e1is explicitamente datos e comportamento en clases e obxectos, e engadindo mecanismos como herdanza e polimorfismo para reutilizaci\'f3n e extensi\'f3n.\
+\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs36 \cf5 \cb3 \strokec12 Que e un obxeto en programaci\'f3n orientada a obxetos?\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs32 \cf3 \cb1 \strokec13 Un obxecto  def\'ednese por tres elementos: identidade, estado e comportamento. Esta idea serve para distinguir un obxecto concreto do molde que o crea (a clase), e para entender que un obxecto non \'e9 s\'f3 datos, sen\'f3n tam\'e9n acci\'f3ns asociadas a eses datos.\
+A identidade \'e9 o que fai que un obxecto sexa ese obxecto e non outro, a\'ednda que te\'f1a o mesmo contido ca outro. (Direcci\'f3n de memoria)\
+O estado \'e9 o conxunto de datos internos do obxecto nun momento dado .(Atributos )\
+ O comportamento son as operaci\'f3ns que o obxecto pode realizar (m\'e9todos), normalmente definidas para ler ou modificar ese estado dun xeito controlado. {\field{\*\fldinst{HYPERLINK "https://github.com/snvkee/guias-programacion-mifork/blob/main/doc/respuestas/tema_1_clases_y_objetos_gpt4o.md#4-qu%C3%A9-tres-elementos-definen-a-un-objeto-en-programaci%C3%B3n-orientada-a-objetos"}}{\fldrslt \strokec14 \
+}}\pard\pardeftab720\partightenfactor0
+\cf0 \strokec13 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs36 \cf5 \cb3 \strokec12 Que e unha clase? \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs32 \cf3 \cb1 \strokec15 Unha clase \'e9 unha descrici\'f3n dun tipo de obxectos: define que datos ter\'e1 (atributos/campos) e que operaci\'f3ns poder\'e1 facer (m\'e9todos). Polo tanto, non \'e9 o mesmo que un obxeto : a clase \'e9 a definici\'f3n; o obxecto \'e9 o resultado creado segundo esa definici\'f3n.\
+Unha instancia \'e9, precisamente, ese obxecto concreto \'93instanciado\'94 a partir da clase (\'e9 dicir, creado e existente en execuci\'f3n). En Java, ao facer new, cr\'e9ase unha instancia; poden existir moitas instancias da mesma clase. \
+ Hai linguaxes orientadas a obxectos baseadas en prototipos (por exemplo, JavaScript no seu modelo de obxectos) onde se crean obxectos a partir doutros obxectos prototipo, sen necesidade dunha \'93clase\'94 como molde formal. A\'ednda as\'ed, moitos linguaxes populares de POO (como Java, C# ou C++) si empregan clases como mecanismo principal para definir obxectos.\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec15 \
+\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs36 \cf16 \cb17 \strokec16 Que e un m\'e9todo? \'bfQue e a\'a0sobrecarga de m\'e9todos?
+\fs48 \cf16 \cb1 \strokec16 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs32 \cf3 \strokec15 Un m\'e9todo \'e9 unha funci\'f3n definida dentro dunha clase e asociada aos seus obxectos (ou \'e1 propia clase). Serve para describir o comportamento. \
+En Java, cando se chama a un m\'e9todo sobre un obxecto, impl\'edcitamente ese m\'e9todo recibe unha referencia ao propio obxecto (similar ao papel de this en C++), o que permite acceder aos seus campos e a outros m\'e9todos.\
+A sobrecarga de m\'e9todos (method overloading) consiste en definir varios m\'e9todos co mesmo nome dentro da mesma clase, pero con listas de par\'e1metros distintas (n\'famero, tipos ou orde). O compilador escolle cal se invoca segundo os argumentos usados na chamada.\
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec15 \
+\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs36 \cf16 \cb17 \strokec16 Exemplo m\'ednimo de clase en Java\
+\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf3 \cb1 \strokec15 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs36 \cf5 \cb3 \strokec13 {{\NeXTGraphic Pasted Graphic.png \width15120 \height7920 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://github.com/snvkee/guias-programacion-mifork/blob/main/doc/respuestas/tema_1_clases_y_objetos_gpt4o.md#5-qu%C3%A9-es-una-clase-es-lo-mismo-que-un-objeto-qu%C3%A9-es-una-instancia-todos-los-lenguajes-orientados-a-objetos-manejan-el-concepto-de-clase"}}{\fldrslt 
+\fs32 \cf0 \cb1 \strokec18 \
+}}\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf0 \cb19 \strokec20 \
+\pard\pardeftab720\sa320\partightenfactor0
+\cf0 \cb1 \strokec21 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs36 \cf0 \strokec22 \
+\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs32 \cf0 \strokec23 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \strokec24 \
+}
