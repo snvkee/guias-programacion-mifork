@@ -66,7 +66,7 @@ La ocultación de información ayuda a preservar las invariantes de clase al imp
 
 A continuación se muestra un ejemplo de una clase Punto en Java que utiliza la ocultación de información. Las coordenadas x e y se declaran como atributos privados y se proporciona un método público para calcular la distancia al origen, sin permitir el acceso directo a los datos internos:
 
-
+```java
 public class Punto {
     private double x;
     private double y;
@@ -80,6 +80,7 @@ public class Punto {
         return Math.sqrt(x * x + y * y);
     }
 }
+```
 
 En este ejemplo, la interfaz pública de la clase Punto está formada por el constructor Punto(double x, double y) y el método calcularDistanciaAOrigen(). Estos son los únicos elementos accesibles desde fuera de la clase y definen cómo puede utilizarse un objeto Punto. Los atributos x e y no forman parte de la interfaz pública, ya que su acceso está restringido.
 
@@ -117,6 +118,7 @@ En Java, los miembros de instancia declarados como private están ocultos para o
 
 A continuación se muestra un ejemplo ampliando la clase Punto con un método calcularDistanciaAPunto(Punto otro):
 
+```java
 public class Punto {
     private double x;
     private double y;
@@ -136,6 +138,7 @@ public class Punto {
         return Math.sqrt(dx * dx + dy * dy);
     }
 }
+```
 
 En este método, se accede directamente a otro.x y otro.y, a pesar de que ambos atributos son private. Esto es posible porque el acceso se realiza desde un método de la misma clase Punto. Por tanto, la ocultación de información actúa a nivel de clase, no a nivel de instancia.
 
@@ -199,6 +202,7 @@ En la clase Punto, pueden utilizarse miembros de clase para almacenar los valore
 
 Un ejemplo de implementación sería el siguiente:
 
+```java
 public class Punto {
     private double x;
     private double y;
@@ -226,6 +230,7 @@ public class Punto {
         return maxY;
     }
 }
+```
 
 En este caso, maxX y maxY son miembros de clase, ya que están declarados como static y son compartidos por todas las instancias de Punto. Los métodos getMaxX y getMaxY también son de clase y forman parte de la interfaz pública que permite consultar esta información sin exponer directamente los atributos, manteniendo así la ocultación de información.
 
@@ -234,11 +239,14 @@ En este caso, maxX y maxY son miembros de clase, ya que están declarados como s
 
 ### Respuesta
 
+```java
+
 public static Punto crearPuntoRedondeado(double x, double y) {
     double xRedondeado = Math.round(x);
     double yRedondeado = Math.round(y);
     return new Punto(xRedondeado, yRedondeado);
 }
+```
 
 
 ## 15. Cambia la implementación de `Punto`. En vez de dos `double`, emplea un array interno de dos posiciones, intentando no modificar la interfaz pública de la clase.
@@ -251,6 +259,7 @@ Este ejemplo ilustra uno de los beneficios clave de la encapsulación: la repres
 
 Una posible implementación sería la siguiente:
 
+```java
 public class Punto {
     private double[] coordenadas;
 
@@ -271,6 +280,7 @@ public class Punto {
         return Math.sqrt(dx * dx + dy * dy);
     }
 }
+```
 
 La interfaz pública no se ha visto alterada: se mantiene el mismo constructor y los mismos métodos públicos. El cambio afecta únicamente a la implementación interna, que sigue estando protegida mediante private. Esto demuestra cómo la encapsulación permite evolucionar una clase sin romper el código que depende de ella.
 
@@ -360,6 +370,8 @@ El uso de atributos privados dentro del enum permite ocultar los detalles intern
 
 Este enfoque evita el uso de constantes dispersas o valores mágicos y refuerza la encapsulación, ya que tanto los datos como el comportamiento relacionado con los meses quedan agrupados en una única definición. Además, al ser un conjunto cerrado, no pueden existir meses inválidos fuera de los definidos.
 
+
+```java
 public enum Mes {
 
     ENERO(1, 31),
@@ -392,7 +404,7 @@ public enum Mes {
     }
 }
 
-
+```
 
 
 ## 24. Añade a la clase `Mes` del ejercicio anterior cuatro métodos para devolver si ese mes tiene algunos días de invierno, primavera, verano u otoño, indicando con un booleano el hemisferio (norte o sur, parámetro `enHemisferioNorte`). Es decir: `esDePrimavera(boolean esHemisferioNorte)`, `esDeVerano(boolean esHemisferioNorte)`, `esDeOtoño(boolean esHemisferioNorte)`, `esDeInvierno(boolean esHemisferioNorte)`
@@ -405,6 +417,8 @@ En este caso, el tipo enumerado Mes puede ampliarse incorporando comportamiento 
 Cada uno de estos métodos devuelve true si el mes tiene al menos algunos días de la estación indicada. Para simplificar, se asocia cada mes a una estación principal en el hemisferio norte y se invierte la estación cuando se trata del hemisferio sur. Esta decisión de diseño mantiene el código claro y coherente con el objetivo del ejercicio.
 
 La ventaja de este enfoque es que la lógica estacional queda completamente contenida dentro del enumerado. No es necesario que el resto del programa conozca reglas externas sobre meses o estaciones, lo que refuerza la encapsulación y evita errores por duplicación de lógica.
+
+```java
 
 public boolean esDePrimavera(boolean esHemisferioNorte) {
     if (esHemisferioNorte) {
@@ -437,3 +451,4 @@ public boolean esDeInvierno(boolean esHemisferioNorte) {
         return this == JUNIO || this == JULIO || this == AGOSTO;
     }
 }
+```
