@@ -1,0 +1,151 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2867
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fnil\fcharset0 Menlo-Regular;\f2\fnil\fcharset0 .SFNS-Regular;
+\f3\fnil\fcharset0 .AppleSystemUIFontMonospaced-Regular;\f4\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red255\green255\blue255;\red0\green0\blue0;\red243\green251\blue246;
+\red243\green251\blue247;\red244\green251\blue251;\red244\green251\blue250;\red243\green250\blue251;\red255\green255\blue255;
+\red242\green250\blue251;\red239\green247\blue251;\red239\green246\blue251;\red239\green247\blue251;\red238\green246\blue251;
+\red57\green128\blue250;\red238\green245\blue251;\red238\green245\blue251;\red237\green244\blue251;\red239\green246\blue251;
+\red193\green193\blue193;\red194\green194\blue192;\red14\green14\blue14;\red194\green194\blue192;\red73\green140\blue207;
+\red72\green139\blue206;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c0\c0;\cssrgb\c96261\c98684\c97322;
+\cssrgb\c96294\c98715\c97597;\cssrgb\c96399\c98810\c98661;\cssrgb\c96378\c98791\c98401;\cssrgb\c96104\c98506\c98839;\cssrgb\c100000\c100000\c99985;
+\cssrgb\c95991\c98392\c98844;\cssrgb\c95071\c97450\c98858;\cssrgb\c94835\c97209\c98854;\cssrgb\c95070\c97450\c98858;\cssrgb\c94717\c97088\c98851;
+\cssrgb\c27876\c59082\c98554;\cssrgb\c94598\c96965\c98847;\cssrgb\c94599\c96966\c98847;\cssrgb\c94359\c96720\c98837;\cssrgb\c94954\c97331\c98856;
+\cssrgb\c80264\c80263\c79963;\cssrgb\c80523\c80521\c79920;\cssrgb\c6700\c6700\c6700;\cssrgb\c80437\c80436\c79935;\cssrgb\c34777\c62428\c84960;
+\cssrgb\c34356\c61927\c84545;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28860\viewh15320\viewkind0
+\deftab720
+\pard\tx9828\pardeftab720\sa320\partightenfactor0
+
+\f0\fs48 \cf2 \cb3 \expnd0\expndtw0\kerning0
+TEMA 1\
+
+\fs36 Caracter\'edsticas b\'e1sicas da programaci\'f3n orientada a obxetos\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs32 \cf3 \cb1 Estas caracter\'edsticas  en conxunto, permiten organizar o programa arredor de \'93entidades\'94 (obxectos) que combinan datos e comportamento.\
+* A abstracci\'f3n consiste en representar s\'f3 o esencial dun concepto e ocultar o irrelevante para o uso. \'c9 dicir, def\'ednese que pode facer un obxecto (operaci\'f3ns  dispo\'f1ibles) sen obrigar a co\'f1ecer como o fai internamente. Esta se emplea para :\
+       - Tratar con temas complejos.\
+       - Para facilitar  el cambio .\
+* O encapsulamento \'e9 a idea de manter xuntos os datos e as funci\'f3ns que os manipulan, e controlar o acceso a eses datos.  (Unir estado y comportamiento y ocultar partes )\
+* A herdanza permite crear unha clase nova reutilizando e especializando outra: a subclase herda propiedades e m\'e9todos da superclase e pode engadir ou modificar comportamento. \
+* O polimorfismo permite tratar obxectos de clases distintas de maneira uniforme a trav\'e9s dun tipo com\'fan (por exemplo, unha superclase), chamando ao mesmo m\'e9todo e facendo que cada obxecto responda coa s\'faa versi\'f3n.\
+\
+Existen diferentes lenguajes que se emplean en la programaci\'f3n  orientada a objectos como por exemplo, Java, C++, Python e C# . \
+En C++ a orientaci\'f3n a obxectos convive facilmente co estilo procedemental, algo familiar para quen v\'e9n de C: p\'f3dese programar con struct/funci\'f3ns e ir incorporando clases, construtores, herdanza, etc. Java e C# est\'e1n m\'e1is centradas no modelo de clases desde o inicio e tenden a fomentar unha estrutura m\'e1is \'93todo dentro de clases\'94, con xesti\'f3n autom\'e1tica de memoria e bibliotecas est\'e1ndar amplas.\
+Python tam\'e9n \'e9 orientado a obxectos , pero permite un estilo moi flexible e menos \'93cerimonioso\'94 ca Java ou C#. Isto fai que se poidan usar clases cando aportan orde e reutilizaci\'f3n, sen necesidade de converter todo en clases desde o primeiro momento.\
+\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs36 \cf9 \cb3 Que es la\'a0programaci\'f3n modular?\
+
+\fs32 \cf3 \cb1 Antes da programaci\'f3n estructurada empregabase a programaci\'f3n en ensamblador .
+\fs36 \
+
+\fs32 A programaci\'f3n estruturada \'e9 un estilo no que o control do programa se organiza con estruturas claras de fluxo ,evitando saltos arbitrarios tipo goto. \
+O obxectivo \'e9 facer o c\'f3digo m\'e1is lexible, m\'e1is doado de probar e de manter, reducindo \'93enredos\'94 no fluxo de execuci\'f3n.\
+A programaci\'f3n modular vai un paso m\'e1is al\'e1 na organizaci\'f3n: consiste en dividir o programa en m\'f3dulos con responsabilidades ben definidas e interfaces claras. \
+Un m\'f3dulo adoita agrupar datos e operaci\'f3ns relacionadas e exp\'f3n s\'f3 o necesario cara f\'f3ra, ocultando detalles internos. En C isto encaixa ben co patr\'f3n de .h (declaraci\'f3ns) e .c (implementaci\'f3n), onde o encabezado act\'faa como contrato do m\'f3dulo.\
+A diferenza pr\'e1ctica \'e9 que a estruturada c\'e9ntrase sobre todo en como escribir o fluxo dentro de cada parte, mentres que a modular c\'e9ntrase en como separar o programa en partes para xestionar a complexidade. \
+A POO retoma isto, pero agrupando m\'e1is explicitamente datos e comportamento en clases e obxectos, e engadindo mecanismos como herdanza e polimorfismo para reutilizaci\'f3n e extensi\'f3n.\
+\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs36 \cf2 \cb3 Que e un obxeto en programaci\'f3n orientada a obxetos?\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs32 \cf3 \cb1 Un obxecto  def\'ednese por tres elementos: identidade, estado e comportamento. Esta idea serve para distinguir un obxecto concreto do molde que o crea (a clase), e para entender que un obxecto non \'e9 s\'f3 datos, sen\'f3n tam\'e9n acci\'f3ns asociadas a eses datos.\
+A identidade \'e9 o que fai que un obxecto sexa ese obxecto e non outro, a\'ednda que te\'f1a o mesmo contido ca outro. (Direcci\'f3n de memoria)\
+O estado \'e9 o conxunto de datos internos do obxecto nun momento dado .(Atributos )\
+ O comportamento son as operaci\'f3ns que o obxecto pode realizar (m\'e9todos), normalmente definidas para ler ou modificar ese estado dun xeito controlado. {\field{\*\fldinst{HYPERLINK "https://github.com/snvkee/guias-programacion-mifork/blob/main/doc/respuestas/tema_1_clases_y_objetos_gpt4o.md#4-qu%C3%A9-tres-elementos-definen-a-un-objeto-en-programaci%C3%B3n-orientada-a-objetos"}}{\fldrslt \
+}}\pard\pardeftab720\partightenfactor0
+\cf3 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs36 \cf2 \cb3 Que e unha clase? \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs32 \cf3 \cb1 Unha clase \'e9 unha descrici\'f3n dun tipo de obxectos: define que datos ter\'e1 (atributos/campos) e que operaci\'f3ns poder\'e1 facer (m\'e9todos). Polo tanto, non \'e9 o mesmo que un obxeto : a clase \'e9 a definici\'f3n; o obxecto \'e9 o resultado creado segundo esa definici\'f3n.\
+Unha instancia \'e9, precisamente, ese obxecto concreto \'93instanciado\'94 a partir da clase (\'e9 dicir, creado e existente en execuci\'f3n). En Java, ao facer new, cr\'e9ase unha instancia; poden existir moitas instancias da mesma clase. \
+ Hai linguaxes orientadas a obxectos baseadas en prototipos (por exemplo, JavaScript no seu modelo de obxectos) onde se crean obxectos a partir doutros obxectos prototipo, sen necesidade dunha \'93clase\'94 como molde formal. A\'ednda as\'ed, moitos linguaxes populares de POO (como Java, C# ou C++) si empregan clases como mecanismo principal para definir obxectos.\
+\pard\pardeftab720\partightenfactor0
+\cf3 \
+\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs36 \cf2 \cb3 Que e un m\'e9todo? \'bfQue e a\'a0sobrecarga de m\'e9todos?
+\fs48 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs32 \cf3 \cb1 Un m\'e9todo \'e9 unha funci\'f3n definida dentro dunha clase e asociada aos seus obxectos (ou \'e1 propia clase). Serve para describir o comportamento. \
+En Java, cando se chama a un m\'e9todo sobre un obxecto, impl\'edcitamente ese m\'e9todo recibe unha referencia ao propio obxecto (similar ao papel de this en C++), o que permite acceder aos seus campos e a outros m\'e9todos.\
+A sobrecarga de m\'e9todos (method overloading) consiste en definir varios m\'e9todos co mesmo nome dentro da mesma clase, pero con listas de par\'e1metros distintas (n\'famero, tipos ou orde). O compilador escolle cal se invoca segundo os argumentos usados na chamada.\
+\pard\pardeftab720\partightenfactor0
+\cf3 \
+\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs36 \cf3 Exemplo de clase en Java\
+\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf3 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs36 \cf3 {{\NeXTGraphic Pasted Graphic.png \width15120 \height7920 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\pardeftab720\sa320\partightenfactor0
+\cf3 \
+\
+\cf2 \cb3 Que \'e9 static?\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs24 \cf3 \cb1 \outl0\strokewidth0 \strokec20 \
+\
+
+\fs32 O punto de entrada dun programa en Java \'e9 o m\'e9todo public static void main(String[] args), que a m\'e1quina virtual busca nunha clase para comezar a execuci\'f3n. Ese m\'e9todo non pertence a un obxecto concreto, sen\'f3n \'e1 clase, e por iso se declara static: permite chamalo sen ter que crear unha instancia previa. A idea lembra a unha funci\'f3n main() en C, pero aqu\'ed queda \'93dentro\'94 dunha clase.\
+\
+A palabra clave static indica que un membro pertence \'e1 clase e non a cada obxecto. Un campo static \'e9 compartido por todas as instancias .\
+\
+Non se emprega s\'f3 para main: \'e9 com\'fan en m\'e9todos auxiliares, en \'93funci\'f3ns utilidade\'94 e en datos com\'fans. Cando se combina con final, normalmente significa unha constante de clase: static fai que haxa un \'fanico valor compartido e final impide que se reasigne despois de inicializalo. Por exemplo, public static final double PI = 3.141592653589793; \
+\
+\
+
+\fs36 \cf2 \cb3 \strokec21 Que son os constructores ?\
+\
+
+\fs32 \cf3 \cb1 \strokec20 new \'e9 o operador que crea un obxecto en Java: reserva memoria para a instancia e devolve unha referencia a ese obxecto. Ademais, new non s\'f3 \'93aloca\'94, sen\'f3n que tam\'e9n provoca a inicializaci\'f3n do obxecto chamando a un m\'e9todo especial da clase: o constructor. \
+\
+Un constructor \'e9 un membro especial que ten o mesmo nome ca clase e non ten tipo de retorno. A s\'faa funci\'f3n \'e9 deixar o obxecto nun estado inicial v\'e1lido, asignando valores aos atributos e aplicando comprobaci\'f3ns se fai falta. Se non se define ning\'fan constructor, Java crea un constructor por defecto sen par\'e1metros que inicializa os campos a valores por defecto (por exemplo, 0 para n\'fameros e null para referencias).\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f2\fs36 \cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 Paso de par\'e1metros en Java\
+\
+
+\f1\fs32 \cf22 \cb1 En Java, todos os par\'e1metros p\'e1sanse por valor, pero o significado dese valor depende do tipo de dato.\
+\
+Cando se trata de tipos primitivos (int, double, boolean, etc.), o que se copia \'e9 o propio valor. \'c9 dicir, o m\'e9todo recibe unha copia independente e calquera modificaci\'f3n dentro do m\'e9todo non afecta \'e1 variable orixinal.\
+\
+En cambio, cando se pasan obxectos, o que se copia \'e9 a referencia ao obxecto, non o obxecto completo. Isto significa que tanto a variable orixinal como o par\'e1metro do m\'e9todo apuntan ao mesmo obxecto en memoria.\
+\
+\'c9 importante distinguir d\'faas situaci\'f3ns:\
+\pard\tqr\tx100\tx260\li260\fi-260\sl324\slmult1\sb240\partightenfactor0
+\cf22 	\'95	Se dentro do m\'e9todo se modifican os atributos do obxecto, eses cambios si se reflicten f\'f3ra do m\'e9todo, porque se est\'e1 alterando o mesmo obxecto.\
+	\'95	Se dentro do m\'e9todo se reasigna a referencia (por exemplo, creando un novo obxecto con 
+\f3 new
+\f1 ), ese cambio non afecta \'e1 variable orixinal, xa que s\'f3 se modifica a copia local da referencia.\
+\
+En resumo: Java non ten paso por referencia real; pasa sempre unha copia do valor, e no caso dos obxectos, ese valor \'e9 unha referencia.\cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec23 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb1 \strokec20 \
+\
+
+\fs36 \cf9 \cb3 \strokec24 M\cf9 \strokec23 \'e9\cf9 \strokec24 todo to String \
+
+\f4\b\fs32 \cf3 \cb1 \strokec25 \
+
+\f1\b0 \strokec20 \
+toString() \'e9 un m\'e9todo que existe en toda clase Java porque se herda de Object, e serve para obter unha representaci\'f3n en texto dun obxecto. \'dasase automaticamente en moitas situaci\'f3ns: por exemplo, ao concatenar un obxecto cun String ou ao facer System.out.println(obj), Java chama a obj.toString() para imprimir algo lexible. \
+\
+}
